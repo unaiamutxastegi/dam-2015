@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Información sobre el producto</title>
+</head>
+<body>
+	<h1>Rellena tu CV</h1>
+	<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Datos básicos</legend>
+
+			<div>
+				<label for="name">Nombre</label><br/>
+				<input id="name" type="text" name="nombre" value="" size="50" /><br/>
+			</div>
+
+			<div>
+				<label>Descripción</label><br/>
+				<textarea name="descripcion"></textarea>			
+			</div>
+
+			<div>
+				<label>Foto</label>
+				<input type="file" name="foto"/><br/>
+			</div>
+
+			<div>
+				<input type="checkbox" name="" value="1" checked/>
+				<label>Añadir contador de visitas</label><br/>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Listas desplegables</legend>
+
+			<label for="sodes">Sistema operativo</label><br/>
+			<select id="sodes" name="so1">
+				<option value="">- Selecciona -</option>
+				<option value="windows">Windows</option>	
+				<option value="mac">Mac</option>
+				<option value="linux">Linux</option>
+				<option value="otro">Otro</option>
+			</select><br/>
+
+			<label for="so">Sistema operativo(multiple)</label><br/>
+			<select id="so" name="so2[]" size="5" multiple="">
+				<option value="" selected="selected">- Selecciona -</option>
+				<option value="windows">Windows</option>	
+				<option value="mac">Mac</option>
+				<option value="linux">Linux</option>
+				<option value="otro">Otro</option>
+			</select><br/>
+
+			<label for="sou">Sistema operativo(único)</label><br/>
+			<select id="sou" name="so3" size="5">
+				<option value="" selected="selected">- Selecciona -</option>
+				<option value="windows">Windows</option>	
+				<option value="mac">Mac</option>
+				<option value="linux">Linux</option>
+				<option value="otro">Otro</option>
+			</select><br/>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos económicos</legend>
+			<div>
+				<label>Precio</label>
+				<input type="text" name="precio"/>
+				<label for="imp">Impuestos</label>
+				<select id="imp" name="imp">
+					<option value="40">%40</option>
+					<option value="30">%30</option>	
+					<option value="20">%20</option>
+				</select><br/>
+			</div>
+
+			<div>
+				<label for="promo">Promoción</label><br/>
+			
+				<input type="radio" name="promo" value="Niguno" checked/>
+				<label>Niguno</label><br/>
+				<input type="radio" name="promo" value="Transporte"/>
+				<label>Transporte Gratuito</label><br/>
+				<input type="radio" name="promo" value="Descuento"/>
+				<label>Descuento %5</label><br/>
+			</div>
+		</fieldset>
+
+		<div>
+			<input type="submit" name="enviar" value="Enviar"/>
+			<input type="reset" name="reset" value="Borrar los datos introducidos"/>
+		</div>
+
+			
+	</form>
+</body>
+</html>
