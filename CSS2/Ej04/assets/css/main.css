@@ -27,6 +27,7 @@ ul{
 	display: none;
 	top: 100%;
 	left: -1px;
+	width: 150%;
 }
 .menu > li:hover .submenu{
 	display: block;
