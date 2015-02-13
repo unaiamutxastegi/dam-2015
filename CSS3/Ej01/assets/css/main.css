@@ -1,0 +1,37 @@
+/*ul>li:first-child{
+	color: blue;
+}
+ul>li:last-child{
+	color: blue;
+}*/
+
+/*li:first-of-type{
+	color: blue;
+}
+li:last-of-type{
+	color: blue;
+}*/
+li:nth-of-type(1){
+	color: blue;
+}
+li:nth-of-type(5){
+	color: blue;
+	font-size:2.8em;
+}
+li:nth-of-type(2){
+	font-size:1.2em;
+}
+li:nth-of-type(3){
+	font-size:1.8em;
+}
+li:nth-of-type(4){
+	font-size:2.2em;
+}
+/*No hay primer hijo de clase last dentro de la clase wrapper*/
+.wrapper .last:first-child{
+	color:blue;
+}
+/*Seleccioname el primer hijo cualquiera... que esta dentro de clase last y clase wrapper*/
+.wrapper .last :first-child{
+	color:blue;
+}

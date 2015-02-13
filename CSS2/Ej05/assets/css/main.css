@@ -24,7 +24,8 @@ ul,ol{
 }
 .wrapper{
 	margin: 0 auto;
-	width: 560px;
+	min-width: 350px;
+	max-width: 600px;
 }
 .header{
 	background-color: #000;
@@ -91,5 +92,28 @@ ol a:active {
 	margin-left: 5%;
 }
 table{
-	border:2px solid gray;
+	border:2px solid #ccc;
+}
+.data-table th, 
+.data-table td{
+	padding: 3px 5px;
+}
+.data-table thead{
+	text-align: left;
+}
+.data-table thead, 
+.data-table tfoot{
+	background-color: #ccc;
+}
+.txt-right{
+	text-align: right;
+}
+.txt-left{
+	text-align: left;
+}
+.date-table .price-th{
+	width: 70px;
+}
+.date-table td{
+	border: 1px solid #ccc;
 }
