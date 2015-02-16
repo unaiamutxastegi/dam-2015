@@ -6,4 +6,5 @@ body{
 	background-image:url('../img/decoration.png'), url('../img/ribbon.png'), url('../img/old_paper.jpg');
 	background-repeat: no-repeat;
 	background-position: top left, bottom right, center center;
+	background-size: auto, auto, cover;
 }	
