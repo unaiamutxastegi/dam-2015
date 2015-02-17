@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+}
+.container{
+    background: #666 url(../img/ej03_tree.jpg) no-repeat -60px 0;
+    width: 420px;
+    height: 480px;
+    position:relative;
+}
+.snowflake {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    animation-name: snowin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.snowflake.f1 {
+    left: 40px;
+    animation-duration: 6s;
+}
+.snowflake.f2 {
+    font-size: 1.8em;
+    left: 120px;
+    animation-duration: 4s;
+}
+.snowflake.f3 {
+    left: 200px;
+    animation-duration: 8s;
+}
+.snowflake.f4 {
+    font-size: 1.5em;
+    left: 280px;
+    animation-duration: 10s;
+}
+@keyframes snowin{
+    10%{
+        transform: translate(35px, 50px) rotate(60deg);
+    }
+    20%{
+        transform: translate(0px, 100px) rotate(-60deg);
+    }
+    30%{
+        transform: translate(35px, 180px) rotate(60deg);
+    }
+    40%{
+        transform: translate(0px, 230px) rotate(60deg);
+    }
+    60%{
+        transform: translate(35px, 300px) rotate(-60deg);
+    }
+    75%{
+        transform: translate(0px, 380px) rotate(60deg);
+    }
+    to{
+        transform: translate(0px, 480px);
+    }
+}

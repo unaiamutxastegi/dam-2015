@@ -1,0 +1,45 @@
+.container{
+	width: 500px; 
+	height:500px; 
+}
+.caja{
+	transition-property: background-color, width, height, top, left, color, transform;
+	transition-duration: 1s;
+	width:100px;
+	height:100px;
+	background-color:red;
+	font-size:20px;
+	padding:5px;
+}
+.caja:hover{
+	width:50px;
+	height:50px;
+	background-color:blue;
+	color:yellow;
+
+	font-size:18px;
+}
+.caja1 .caja:hover{
+	transform: translate(450px, 100px) scale(0.5) rotate(270deg);
+}
+.caja2 .caja:hover{
+	transform: translate(450px, 100px) scale(0.5) rotate(270deg);
+}
+.caja3 .caja:hover{
+	transform: translate(450px, 100px) scale(0.5) rotate(270deg);
+}
+.caja4 .caja:hover{
+	transform: translate(450px, 100px) scale(0.5) rotate(270deg);
+}
+.caja1 .caja{
+	transform: translate(10px, 10px);
+}
+.caja2 .caja{
+	transform: translate(10px, 20px);
+}
+.caja3 .caja{
+	transform: translate(10px, 30px);
+}
+.caja4 .caja{
+	transform: translate(10px, 40px);
+}
