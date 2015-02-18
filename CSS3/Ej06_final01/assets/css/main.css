@@ -72,32 +72,40 @@ body {
 }
 
 /* ANIMACIONES Y TRANSICIONES */
+.view h2,
+.view p{
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.view h2{
+  transform:translateY(-500px);
+}
+.view p{
+  transform:translateY(150px);
+}
 .view .mask {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  background-color: rgba(219,127,8, 0.0);
+}
+.view .info{
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
   opacity: 0;
 }
-.view:hover .mask{
-  animation-name: fondonaranja;
-  animation-duration: 3s;
- 
-}
-
 .view:hover img{
    transform: scale(1.5);
 }
-@keyframes fondonaranja{
-  20%{
-    opacity:0.2;
-  }
-  40%{
-    opacity:0.4;
-  }
-  60%{
-    opacity:0.6;
-  }
-  80%{
-    opacity:0.8;
-  }
-  to{
-    opacity:1;
-  }
+.view:hover .mask{
+  background-color:rgba(219,127,8, 0.7);
+}
+.view:hover .info{
+  opacity: 1;
+}
+.view:hover h2, .view:hover p{
+  transform:translateY(0px);
 }
