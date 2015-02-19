@@ -8,9 +8,28 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
-	<div class="header navbar navbar-inverse">
+	<div class="header navbar navbar-default">
 		<div class="container">
-			<h1>Ejemplo de Bootstrap</h1>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
+		     <a class="navbar-brand" href="index.html">Ejemplo de Bootstrap</a>
+		     <div class="collapse navbar-collapse" id="navbar-menu">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="tour.html">Take a tour</a>
+					</li>
+					<li>
+						<a href="buy.html">Buy tickets</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+				</ul>
+		     </div>
 		</div>
 	</div>
 
@@ -19,7 +38,7 @@
 			<div class="well">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6">
-						<h2>Ejemplo de Bootstrap</h2>
+						<h1 class="h2">Ejemplo de Bootstrap</h1>
 						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam minbs, ratione aperiam quidem mollitia sed ex porro incidunt ipsum adipisci laboriosam error doloremque hic earum iure nisi nesciunt iusto aspernatur.</p>
 						<a href="tour.html" class="btn btn-default">Take a tour</a>
 						<a href="buytickets.html" class="btn btn-primary">Buy Tickets Now</a>
@@ -30,22 +49,21 @@
 				</div>		
 			</div>	
 			<div class="row text-center">	
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0">
 					<span class="features glyphicon glyphicon-briefcase"></span>		
 					<h3>Ejemplo de Bootstrap</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi numquam obcaecati vel, ratione quos voluptates ullam temporibus sequi nisi omnis, fuga qui et autem ab ad. Commodi, rem ad minus?</p>
 				</div>
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<span class="features glyphicon glyphicon-random"></span>
 					<h3>Ejemplo de Bootstrap</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores tenetur libero earum, sequi quo laborum esse obcaecati ullam optio inventore consequuntur eaque odio perspiciatis minus nobis aliquid enim quam accusamus.</p>
 				</div>
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<span class="features glyphicon glyphicon-send"></span>
 					<h3>Ejemplo de Bootstrap</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores tenetur libero earum, sequi quo laborum esse obcaecati ullam optio inventore consequuntur eaque odio perspiciatis minus nobis aliquid enim quam accusamus.</p>
 				</div>
-			
 			</div>
 		</div>
 	</div>
@@ -87,5 +105,7 @@
 			</div>
 		</div>
 	</div>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
