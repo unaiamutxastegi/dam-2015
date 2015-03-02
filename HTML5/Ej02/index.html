@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Reproductor de Video</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Reproductor de video</h1>
+        <div class="well">
+            <div class="row">
+                <video class="col-xs-12" id="video">
+                    <source src="assets/video/BMX.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="assets/video/BMX.webm" type='video/webm; codecs="vp8, vorbis"'>
+                </video>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuemax="100" id="progress">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <button type="submit" class="btn btn-primary" id="play">
+                        <span class="glyphicon glyphicon-play"></span>
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="pause">
+                        <span class="glyphicon glyphicon-pause"></span>
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="stop">
+                        <span class="glyphicon glyphicon-stop"></span>
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="back">
+                        <span class="glyphicon glyphicon-backward"></span>
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="for">
+                        <span class="glyphicon glyphicon-forward"></span>
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="backward">
+                        <span class="glyphicon glyphicon-fast-backward"></span>
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="forward">
+                        <span class="glyphicon glyphicon-fast-forward"></span>
+                    </button>
+                    <button type="submit" class="btn btn-primary" id="fullscreen">
+                        <span class="glyphicon glyphicon-fullscreen"></span>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <input type="range" id="volumen">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
