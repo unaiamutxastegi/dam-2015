@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+
+.bar .button {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    height: 100%;
+    width:100%;
+}
+
+.bar .no-padding{
+	padding: 0px;
+}
+
+.bar .title .no-margin{
+	margin: 0px;
+}
