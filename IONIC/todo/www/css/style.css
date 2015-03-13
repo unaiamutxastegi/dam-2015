@@ -1,17 +1,11 @@
 /* Empty. Add your own CSS if you like */
-
-.bar .button {
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-    height: 100%;
-    width:100%;
+.button.no-margin{
+	margin: 0px;
 }
 
-.bar .no-padding{
+.no-padding{
 	padding: 0px;
 }
-
-.bar .title .no-margin{
-	margin: 0px;
+.no-border{
+	border:0px;
 }

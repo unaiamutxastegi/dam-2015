@@ -1,0 +1,34 @@
+<ion-view view-title="Cooking Calendar">
+    <ion-content class="padding">
+        <div class="list card">
+            <div class="item item-divider">Tarta de Queso</div>
+            <div class="item item-body">
+                <div>
+                    There is a fire in <b>sector 3</b>
+                </div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Tarta de Queso</div>
+            <div class="item item-body">
+                <div>
+                    You ate an apple today!
+                </div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Tarta de Queso</div>
+            <div class="item item-body">
+                <div>
+                    You have <b>29</b> meetings on your calendar tomorrow.
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<ion-tabs class="tabs-icon-top tabs-color-active-positive" ng-controller="MyController">
+    <button class="button button-full button-stable no-padding no-margin no-border" ng-click="openModal()">
+        Cambiar
+    </button>
+</ion-tabs>
+<script id="mymodal.html" type="text/ng-template"></script>

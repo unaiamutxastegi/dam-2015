@@ -1,13 +1,19 @@
 angular.module('starter.controller', [])
 
+.controller('indexCtrl', function($scope) {})
+
 .controller('MyController', function($scope, $ionicModal) {
-    $ionicModal.fromTemplateUrl('my-modal.html', {
+    // Load the modal from the given template URL
+    $ionicModal.fromTemplateUrl('templates/mymodal.html', function($ionicModal) {
+        $scope.modal = $ionicModal;
+    }, {
+        // Use our scope for the scope of the modal to keep it simple
         scope: $scope,
+        // The animation we want to use for the modal entrance
         animation: 'slide-in-up'
-    }).then(function(modal) {
-        $scope.modal = modal;
     });
     $scope.openModal = function() {
+        console.log('Opening Modal');
         $scope.modal.show();
     };
     $scope.closeModal = function() {

@@ -1,10 +1,26 @@
-<script id="my-modal.html" type="text/ng-template">
-    <ion-modal-view>
-        <ion-header-bar>
-            <h1 class="title">My Modal title</h1>
-        </ion-header-bar>
-        <ion-content>
-            Hello!
-        </ion-content>
-    </ion-modal-view>
-</script>
+<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-stable">
+        <h1 class="title">Cambiar Fecha y Ubicación</h1>
+        <div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Fecha</span>
+                <input type="date">
+            </label>
+            <label class="item item-input item-select">
+                <span class="input-label">Cambiar lugar</span>
+                <select name="lugares">
+                    <option>Bilbo</option>
+                    <option selected>Donosti</option>
+                    <option>Gasteiz</option>
+                </select>
+            </label>
+            <button class="button button-full button-stable no-padding no-margin no-border" ng-click="closeModal()">
+                Aceptar
+            </button>
+        </div>
+    </ion-content>
+</ion-modal-view>

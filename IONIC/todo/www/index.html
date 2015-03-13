@@ -21,26 +21,16 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
-    <script src="js/controller.js"></script>
+    <script src="js/controller.js"></script> 
 </head>
 
 <body ng-app="starter">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
 
-    <ion-pane>
-        <div class="bar bar-header bar-stable">
-            <h1 class="title">Cooking Calendar</h1>
-        </div>
-        <ion-content>
-            
-        </ion-content>
-
-        <div class="bar bar-footer bar-stable ">
-            <div class="title no-margin">
-                <button class="button button-full button-stable no-padding" ng-submit="OpenModal()">Cambiar
-                </button>
-            </div>
-        </div>
-    </ion-pane>
+    <ion-nav-view name="myindex"></ion-nav-view>
 </body>
 
 </html>
