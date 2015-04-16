@@ -2,6 +2,8 @@ angular.module('starter.controller', [])
 
 .controller('indexCtrl', function($scope) {})
 
+.controller('platoCtrl', function($scope) {})
+
 .controller('MyController', function($scope, $ionicModal) {
     // Load the modal from the given template URL
     $ionicModal.fromTemplateUrl('templates/mymodal.html', function($ionicModal) {
@@ -32,3 +34,4 @@ angular.module('starter.controller', [])
         // Execute action
     });
 });
+

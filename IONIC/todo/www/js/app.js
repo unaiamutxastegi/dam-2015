@@ -35,6 +35,16 @@ angular.module('starter', ['ionic', 'starter.controller'])
                 controller: 'indexCtrl'
             }
         }
+    })
+
+    .state('plato', {
+        url: '/myindex/plato',
+        views: {
+            'plato': {
+                templateUrl: 'templates/plato.html',
+                controller: 'platoCtrl'
+            }
+        }
     });
 
     // if none of the above states are matched, use this as the fallback
